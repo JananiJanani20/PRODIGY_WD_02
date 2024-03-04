@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stopwatch</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Stopwatch</h1>
+  <div class="stopwatch">
+    <span id="display">00:00:00</span>
+    <div class="buttons">
+      <button id="startStop" onclick="startStop()">Start</button>
+      <button id="lap" onclick="lap()">Lap</button>
+      <button id="reset" onclick="reset()">Reset</button>
+    </div>
+  </div>
+  <ul id="laps"></ul>
+  <div class="theme-toggle">
+    <label>
+      <input type="radio" name="theme" value="light" checked onchange="changeTheme()"> Light
+    </label>
+    <label>
+      <input type="radio" name="theme" value="dark" onchange="changeTheme()"> Dark
+    </label>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
